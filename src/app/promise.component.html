@@ -1,0 +1,12 @@
+<h2>Top 10 Angular Questions found on Stack Overflow</h2>
+
+<ul class="list">
+  <li class="list-item" *ngFor="let question of questions.items | keys" >
+    <div class="list-content">
+		<img src="{{question.value.owner.profile_image}}" alt="{{question.value.owner.display_name}}" />
+		<h3>{{question.value.owner.display_name}}</h3>
+		<p>{{question.value.title}}</p>
+		<a href="{{question.value.link}}">View more</a>
+    </div>
+  </li>
+</ul>

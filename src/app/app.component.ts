@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Code Challenge';
+  footer = 'Penny Smith | penny@pennysmith.net | 0415 973 393';
 }

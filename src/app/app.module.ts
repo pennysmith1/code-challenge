@@ -1,16 +1,28 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } 	 	from '@angular/core';
+import { BrowserModule } 	from '@angular/platform-browser';
+import { HttpModule }		from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { AppComponent } 	from './app.component';
+import { PromiseComponent } from './promise.component';
+import { QuestionService } 	from './question.service';
+import { KeysPipe } 		from './pipes/keys';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	imports: [     
+		BrowserModule,
+		HttpModule
+	],
+	declarations: [
+		AppComponent,
+		PromiseComponent,
+		KeysPipe
+	],
+	providers: [
+		QuestionService
+	],
+	bootstrap: [
+		AppComponent
+	]
 })
+
 export class AppModule { }
