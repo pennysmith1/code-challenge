@@ -1,6 +1,6 @@
-# CodeChallenge - dynamically display top 10 angular questions found on stack overflow
+# CodeChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+Display top 10 angular questions found on stack overflow. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
 
 ## Running the app
 
